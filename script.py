@@ -1,6 +1,6 @@
 import boto3
 
-def lambda_function():
+def lambda_handler(event, context):
     ec2 = boto3.client("ec2")
 
     # Get all Snapshots
